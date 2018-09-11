@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.buttonToClick = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // buttonToClick
+            // 
+            this.buttonToClick.Location = new System.Drawing.Point(210, 96);
+            this.buttonToClick.Name = "buttonToClick";
+            this.buttonToClick.Size = new System.Drawing.Size(374, 162);
+            this.buttonToClick.TabIndex = 0;
+            this.buttonToClick.Text = "Click";
+            this.buttonToClick.UseVisualStyleBackColor = true;
+            this.buttonToClick.Click += new System.EventHandler(this.buttonToClick_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonToClick);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonToClick;
     }
 }
 

@@ -15,6 +15,14 @@ namespace HelloWinForms
         public Form1()
         {
             InitializeComponent();
+            //Button buttonToClick = new Button();
+            //buttonToClick.Text = "Click";
+            //Controls.Add(buttonToClick);
+        }
+
+        private void buttonToClick_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("It was clicked");
         }
     }
 }

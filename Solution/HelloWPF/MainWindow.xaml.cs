@@ -24,5 +24,10 @@ namespace HelloWPF
         {
             InitializeComponent();
         }
+
+        private void WPFButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("WPF button was clicked");
+        }
     }
 }
